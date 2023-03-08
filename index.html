@@ -20,19 +20,18 @@
   <header>
     <div class="top-header">
       <img src="images/logo.svg" alt="Logo da Sunnyside">
-      <img src="images/icon-hamburger.svg" alt="Menu icone">
+      <img src="images/icon-hamburger.svg" alt="Menu icone" onclick="toggleMenu()">
     </div>
     We are creatives
     <img src="images/icon-arrow-down.svg" alt="Seta para baixo" id="arrow-down">
+    <ul id="id-menu-temporario" class="menu">
+      <li><a href="index.html">About</a></li>
+      <li><a href="index.html">Services</a></li>
+      <li><a href="index.html">Projects</a></li>
+      <li><a href="index.html" id="btn-contact">Contact</a></li>
+    </ul>
   </header>
   
-  <div class="menu">
-    <input type="button" value="About">
-    <input type="button" value="Services">
-    <input type="button" value="Projects">
-    <input type="button" value="Contact" id="btn-contact">
-  </div>
-
 
   Transform your brand
 
@@ -76,5 +75,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="index.js"></script>
 </body>
 </html>
