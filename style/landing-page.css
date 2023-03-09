@@ -37,15 +37,15 @@ header {
     padding-top: 25px;
 }
 
-#arrow-down {
-    width: 0.8em;
+#btn-menu:hover {
+    cursor: pointer;
 }
 
 .menu {
     position: absolute;
     top: 80px;
 
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
@@ -53,11 +53,14 @@ header {
     width: 90vw;
     height: 60vh;
     background-color: #ffffff;
-
+    
     list-style: none;
     padding: 0;
     font-size: 14px;
 
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .5s;
 }
 
 .menu:after {
@@ -69,6 +72,10 @@ header {
     border-bottom: 20px solid #ffffff;
     top: -20px;
     left: 92.5%;
+}
+
+#arrow-down {
+    width: 0.8em;
 }
 
 a {
