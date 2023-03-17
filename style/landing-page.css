@@ -1,13 +1,17 @@
-@import url('https://fonts.google.com/specimen/Barlow');
-@import url('https://fonts.google.com/specimen/Fraunces');
-
-* {
-    font-family: "Barlow", "Fraunces";
-}
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
 
 body {
     margin: 0;
     font-size: 18px;
+    font-family: 'Barlow', sans-serif;
+}
+
+header h2 {
+    font-size: 1em;
+    margin: 0;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
 }
 
 header {
@@ -78,7 +82,7 @@ header {
     width: 0.8em;
 }
 
-a {
+li a {
     background: none;
     border: none;
     color: gray;
@@ -87,13 +91,107 @@ a {
     text-transform: none;
     font-weight: 600;
     padding: 10px 30px;
+    font-size: 1.1em;
 }
 
 #btn-contact{
     background-color: hsl(51, 100%, 49%);
     font-weight: bold;
+    font-family: 'Fraunces', serif;
+    font-size: 1em;
     color: hsl(167, 40%, 24%);
     border-radius: 50px;
     padding: 15px 25px;
     text-transform: uppercase;
+}
+
+.conteiner-description {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    row-gap: 10px;
+    color: hsl(212, 27%, 19%);
+}
+
+.conteiner-description h2, a {
+    font-family: 'Fraunces', serif;
+
+}
+
+.conteiner-description h2 {
+    font-weight: 900;
+    font-size: 1.8em;
+    word-wrap: break-word;
+    
+    padding: 0 20px;
+    margin: 0;
+    margin-top: 50px;
+}
+
+.conteiner-description p {
+    color: hsl(232, 10%, 55%);
+    padding: 0 20px;
+}
+
+.conteiner-description a {
+    font-weight: 700;
+    font-size: 0.8em;
+
+    text-transform: uppercase;
+    text-decoration: none;
+    color: hsl(211, 28%, 19%);
+
+    margin-bottom: 60px;
+}
+
+.conteiner-description a::before{
+    content: '';
+    width: 30%;
+    position: absolute;
+    right: 35%;
+}
+
+#learn-more-yellow::before{
+    top: 231.5%;
+    border-bottom: 5px solid hsla(51, 100%, 49%, 0.301);    
+}
+
+#learn-more-red::before{
+    top: 376.5%;
+    border-bottom: 5px solid hsla(7, 99%, 70%, 0.301);    
+}
+
+.conteiner-announcement {    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120vh;
+    text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+#conteiner-announcement-green {
+    background-image: url('../images/mobile/image-graphic-design.jpg');
+    color: hsl(167, 40%, 24%);
+}
+
+#conteiner-announcement-blue {
+    background-image: url('../images/mobile/image-photography.jpg');
+    color: hsl(198, 62%, 26%);
+}
+
+.conteiner-announcement h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+}
+
+.conteiner-announcement p {
+    font-weight: 600;
+    font-size: 0.9em;
+    margin-bottom: 50px;
+    padding: 0 10px;
 }
