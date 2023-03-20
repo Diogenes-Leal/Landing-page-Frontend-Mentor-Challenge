@@ -7,6 +7,10 @@ body {
     font-family: 'Barlow', sans-serif;
 }
 
+p {
+    line-height: 1.6em;
+}
+
 header h2 {
     font-size: 1em;
     margin: 0;
@@ -138,28 +142,20 @@ li a {
     font-weight: 700;
     font-size: 0.8em;
 
-    text-transform: uppercase;
-    text-decoration: none;
+    text-transform: uppercase;text-decoration-line: underline;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 2px;
     color: hsl(211, 28%, 19%);
 
     margin-bottom: 60px;
 }
 
-.conteiner-description a::before{
-    content: '';
-    width: 30%;
-    position: absolute;
-    right: 35%;
+#learn-more-yellow {
+    text-decoration-color: hsla(51, 100%, 49%, 0.301);
 }
 
-#learn-more-yellow::before{
-    top: 231.5%;
-    border-bottom: 5px solid hsla(51, 100%, 49%, 0.301);    
-}
-
-#learn-more-red::before{
-    top: 376.5%;
-    border-bottom: 5px solid hsla(7, 99%, 70%, 0.301);    
+#learn-more-red{
+    text-decoration-color: hsla(7, 99%, 70%, 0.301);    
 }
 
 .conteiner-announcement {    
@@ -187,6 +183,7 @@ li a {
 .conteiner-announcement h2 {
     font-family: 'Fraunces', serif;
     font-weight: 900;
+    text-transform: capitalize;
 }
 
 .conteiner-announcement p {
