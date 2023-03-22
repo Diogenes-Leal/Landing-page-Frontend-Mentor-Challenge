@@ -31,6 +31,8 @@ header {
     font-weight: bold;
     color: white;
 
+    
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -120,7 +122,6 @@ li a {
 
 .conteiner-description h2, a {
     font-family: 'Fraunces', serif;
-
 }
 
 .conteiner-description h2 {
@@ -197,6 +198,9 @@ li a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    row-gap: 45px;
+    margin-top: 50px;
+    margin-bottom: 80px;
 }
 
 .conteiner-testimonials h3 {
@@ -212,7 +216,9 @@ li a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
+
+    height: 50vh;
 }
 
 .conteiner-person-testimony img {
@@ -226,5 +232,65 @@ li a {
 
     font-weight: 600;
     font-size: 0.9em;
-    padding: 0 20px;
+    padding: 0 40px;
+}
+
+.conteiner-person-testimony h4 {
+    font-family: 'Fraunces', serif;
+    font-size: 0.9em;
+    margin: 0;
+}
+
+.conteiner-person-testimony h5 {
+    margin: 0;
+    color: hsl(210, 4%, 67%);
+    font-size: 0.7em;
+}
+
+.images-gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.images-gallery img {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+}
+
+footer{
+    height: 70vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #90d4c5;
+}
+
+.footer-links, .footer-social-media {
+    display: flex;
+    margin-top: 50px;
+}
+
+.footer-links {
+    column-gap: 65px;    
+}
+
+.footer-social-media {
+    column-gap: 25px;
+    margin-top: 100px;    
+}
+
+.footer-links a {
+    color: hsl(168, 34%, 41%);
+    text-decoration: none;
+    font-family: 'Barlow', sans-serif;
+    font-size: 0.8em;
+}
+
+.footer-logo {
+    fill: #458c7e;
+    width: 50%;
 }
