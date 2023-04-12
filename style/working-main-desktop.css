@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
+
+@media screen and (min-width:768px) {
+    main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .conteiner-description {
+        flex-direction: row;
+        justify-content: center;
+        font-size: 1.1em;
+    }
+
+    #reverse-flex {
+        flex-direction: row-reverse;
+    }
+
+    .conteiner-description-information, .conteiner-description-image {
+        width: 50vw;
+        height: 50vw;
+    }
+
+    .conteiner-description-information {
+        justify-content: center;
+    }
+
+    .conteiner-description-information p, .conteiner-description-information h2, .conteiner-description-information a {
+        text-align: start;
+        padding: 0 130px;
+        margin-top: 40px;
+    }
+
+    .conteiner-description-information p {
+        padding-right: 50px;
+    }
+
+    .conteiner-description-information h2 {
+        padding-right: 140px;
+    }
+
+    #learn-more-yellow:hover{
+        text-decoration-color: hsl(51, 100%, 49%);
+    }
+
+    #learn-more-red:hover{
+        text-decoration-color: hsl(7, 99%, 70%);    
+    }
+
+    #image-transform {
+        background-image: url("../images/desktop/image-transform.jpg");
+    }
+    
+    #image-stand-out {
+        background-image: url("../images/desktop/image-stand-out.jpg");
+    }
+
+    .conteiner-announcement {
+        height: 100vh;
+        width: 50vw;
+    }
+
+    #conteiner-announcement-green {
+        background-image: url('../images/desktop/image-graphic-design.jpg');
+        color: hsl(167, 40%, 24%);
+    }
+
+    #conteiner-announcement-blue {
+        background-image: url('../images/desktop/image-photography.jpg');
+        color: hsl(198, 62%, 26%);
+    }
+
+    .conteiner-announcement p {
+        padding: 0 25%;
+    }
+
+    .conteiner-testimonials {
+        width: 100vw;
+        margin: 150px 0;
+    }
+
+    .conteiner-persons-testimonials {
+        flex-direction: row;
+        row-gap: 0;
+        justify-content: space-evenly;
+    }
+
+    .conteiner-person-testimony {
+        width: 30vw;
+    }
+}

@@ -18,42 +18,51 @@
   <link rel="stylesheet" href="style/working-header.css">
   <link rel="stylesheet" href="style/working-main.css">
   <link rel="stylesheet" href="style/working-footer.css">
+  
+  <link rel="stylesheet" href="style/working-header-desktop.css">
+  <link rel="stylesheet" href="style/working-main-desktop.css">
+  <link rel="stylesheet" href="style/working-footer-desktop.css">
 </head>
 <body>
   <header>
     <div class="top-header">
       <img src="images/logo.svg" alt="Logo da Sunnyside">
       <img src="images/icon-hamburger.svg" alt="Menu icone" id="btn-menu" onclick="toggleMenu()">
+      <ul id="id-menu-temporario" class="menu">
+        <li><a href="index.html">About</a></li>
+        <li><a href="index.html">Services</a></li>
+        <li><a href="index.html">Projects</a></li>
+        <li><a href="index.html" id="btn-contact">Contact</a></li>
+      </ul>
     </div>
     <h2>We are creatives</h2>
     <img src="images/icon-arrow-down.svg" alt="Seta para baixo" id="arrow-down">
-    <ul id="id-menu-temporario" class="menu">
-      <li><a href="index.html">About</a></li>
-      <li><a href="index.html">Services</a></li>
-      <li><a href="index.html">Projects</a></li>
-      <li><a href="index.html" id="btn-contact">Contact</a></li>
-    </ul>
+    
   </header>
   
   
   <main>
-    <div class="conteiner-description">
-      <img src="images/mobile/image-transform.jpg" alt="">
-      <h2>Transform your brand</h2>
-      <p>
-        We are a full-service creative agency specializing in helping brands grow fast. 
-        Engage your clients through compelling visuals that do most of the marketing for you.
-      </p>
-      <a href="" id="learn-more-yellow">Learn more</a>
+    <div class="conteiner-description" id="reverse-flex">
+      <div class="conteiner-description-image" id="image-transform"></div>
+      <div class="conteiner-description-information">
+        <h2>Transform your brand</h2>
+        <p>
+          We are a full-service creative agency specializing in helping brands grow fast. 
+          Engage your clients through compelling visuals that do most of the marketing for you.
+        </p>
+        <a href="" id="learn-more-yellow">Learn more</a>        
+      </div>
     </div>
   
     <div class="conteiner-description">
-      <img src="images/mobile/image-stand-out.jpg" alt="">
-      <h2>Stand out to the right audience</h2>
-      <p>
-        Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.
-      </p>
-      <a href="" id="learn-more-red">Learn more</a>
+      <div class="conteiner-description-image" id="image-stand-out"></div>
+      <div class="conteiner-description-information">
+        <h2>Stand out to the right audience</h2>
+        <p>
+          Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.
+        </p>
+        <a href="" id="learn-more-red">Learn more</a>
+      </div>
     </div>
     
     <div class="conteiner-announcement" id="conteiner-announcement-green">
@@ -68,39 +77,41 @@
   
     <div class="conteiner-testimonials">
       <h3>Client testimonials</h3>
-      <div class="conteiner-person-testimony">
-        <img src="images/image-emily.jpg" alt="Foto de perfil de Emily R.">
-        <p>
-          We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-        </p>
-        <h4>Emily R.</h4>
-        <h5>Marketing Director</h5>
-      </div>
-      
-      <div class="conteiner-person-testimony">
-        <img src="images/image-thomas.jpg" alt="Foto de perfil de Thomas S.">
-        <p>
-          Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-        </p>
-        <h4>Thomas S.</h4>
-        <h5>Chief Operating Officer</h5>
-      </div>
-      
-      <div class="conteiner-person-testimony">
-        <img src="images/image-jennie.jpg" alt="Foto de perfil de Jennie F.">
-        <p>
-          Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-        </p>
-        <h4>Jennie F.</h4>
-        <h5>Business Owner</h5>
+      <div class="conteiner-persons-testimonials">
+        <div class="conteiner-person-testimony">
+          <img src="images/image-emily.jpg" alt="Foto de perfil de Emily R.">
+          <p>
+            We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+          </p>
+          <h4>Emily R.</h4>
+          <h5>Marketing Director</h5>
+        </div>
+        
+        <div class="conteiner-person-testimony">
+          <img src="images/image-thomas.jpg" alt="Foto de perfil de Thomas S.">
+          <p>
+            Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
+          </p>
+          <h4>Thomas S.</h4>
+          <h5>Chief Operating Officer</h5>
+        </div>
+        
+        <div class="conteiner-person-testimony">
+          <img src="images/image-jennie.jpg" alt="Foto de perfil de Jennie F.">
+          <p>
+            Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+          </p>
+          <h4>Jennie F.</h4>
+          <h5>Business Owner</h5>
+        </div>
       </div>
     </div>
   
     <div class="images-gallery">
-      <img src="images/mobile/image-gallery-milkbottles.jpg" alt="Imagem de garrafas de leite">
-      <img src="images/mobile/image-gallery-orange.jpg" alt="Imagem de uma laranja">
-      <img src="images/mobile/image-gallery-cone.jpg" alt="Imagem de um cone de sorvete">
-      <img src="images/mobile/image-gallery-sugar-cubes.jpg" alt="Imagem de cubos de açucar">
+      <div class="image-from-gallery" id="image-gallery-milkbottles"></div>
+      <div class="image-from-gallery" id="image-gallery-orange"></div>
+      <div class="image-from-gallery" id="image-gallery-cone"></div>
+      <div class="image-from-gallery" id="image-gallery-sugar-cubes"></div>
     </div>
   </main>
   

@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
+
+@media screen and (min-width:768px) {
+    #image-gallery-milkbottles {
+        background-image: url("../images/desktop/image-gallery-milkbottles.jpg");
+    }
+    
+    #image-gallery-orange {
+        background-image: url("../images/desktop/image-gallery-orange.jpg");
+    }
+    
+    #image-gallery-cone {
+        background-image: url("../images/desktop/image-gallery-cone.jpg");
+    }
+    
+    #image-gallery-sugar-cubes {
+        background-image: url("../images/desktop/image-gallery-sugarcubes.jpg");
+    }
+}

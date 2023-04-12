@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
+
+@media screen and (min-width:768px) {
+    header h2 {
+        font-size: 1.1em;
+        font-weight: 900;
+        letter-spacing: 8px;
+    }
+    
+    header {
+        background-image: url('../images/desktop/image-header.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: #3dbeff;
+    }
+
+    #btn-menu {
+        display: none;
+    }
+
+    .menu {
+        opacity: 1;
+        pointer-events: all;
+        
+        flex-direction: row;
+        justify-content: space-around;
+        
+        width: 35vw;
+        height: auto;
+        background-color: #ffffff00;
+        
+        position: relative;
+        top: auto;
+    }
+
+    .menu::after {
+        display: none;
+    }
+
+    li a {
+        color: #ffffff;
+        padding: 0;
+    }
+
+    #btn-contact {
+        background-color: hsl(0, 0%, 100%);
+    }
+
+    #btn-contact:hover {
+        background-color: #6fcfff;
+        color: #ffffff;
+    }
+}

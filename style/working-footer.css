@@ -1,12 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
+
 .images-gallery {
     display: flex;
     flex-wrap: wrap;
 }
 
-.images-gallery img {
+.image-from-gallery {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 39vh;
+    width: 50%;
     margin: 0;
     padding: 0;
-    width: 50%;
+}
+
+#image-gallery-milkbottles {
+    background-image: url("../images/mobile/image-gallery-milkbottles.jpg");
+}
+
+#image-gallery-orange {
+    background-image: url("../images/mobile/image-gallery-orange.jpg");
+}
+
+#image-gallery-cone {
+    background-image: url("../images/mobile/image-gallery-cone.jpg");
+}
+
+#image-gallery-sugar-cubes {
+    background-image: url("../images/mobile/image-gallery-sugar-cubes.jpg");
 }
 
 footer{
