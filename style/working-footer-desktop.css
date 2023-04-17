@@ -3,10 +3,10 @@
 
 @media screen and (min-width:768px) {
     
-    .image-from-gallery {
-        height: 70vh;
-        width: 25vw;
-        background-size: cover;
+    .images-gallery {
+        flex-wrap: nowrap;
+        width: 100%;
+        height: 60vh;
     }
 
     #image-gallery-milkbottles {
@@ -23,6 +23,11 @@
     
     #image-gallery-sugar-cubes {
         background-image: url("../images/desktop/image-gallery-sugarcubes.jpg");
+    }
+    
+    .image-from-gallery {
+        height: 100%;
+        width: 25%;
     }
 
     .footer-links a:hover{

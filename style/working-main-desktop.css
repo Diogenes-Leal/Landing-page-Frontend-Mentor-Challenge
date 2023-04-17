@@ -19,8 +19,8 @@
     }
 
     .conteiner-description-information, .conteiner-description-image {
-        width: 50vw;
-        height: 50vw;
+        width: 50%;
+        height: 100vh;
     }
 
     .conteiner-description-information {
@@ -59,7 +59,7 @@
 
     .conteiner-announcement {
         height: 100vh;
-        width: 50vw;
+        width: 50%;
     }
 
     #conteiner-announcement-green {
