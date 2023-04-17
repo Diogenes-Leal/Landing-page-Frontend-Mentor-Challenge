@@ -33,4 +33,8 @@
     .footer-links a:hover{
         color: white;
     }
+
+    .footer-logo {
+        width: 10%;
+    }
 }
